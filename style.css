@@ -57,6 +57,15 @@ body {
     height: 100vh;
 }
 
+.bigo1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10vw 0 10vw;
+    height: 120vh;
+}
+
 .landingText h1 {
     font-size: 6vw;
     margin: 0;
@@ -114,8 +123,32 @@ body {
     top: 50px;
 }
 
+.bigoText {
+    position: relative;
+    padding: 0 50px;
+    height: inherit;
+}
+
+.bigoText h1 {
+    font-size: 34px;
+    position: relative;
+    left: 200px;
+}
+
+.bigoText img {
+    width: 13vw;
+    position: absolute;
+    top: 50px;
+    width: 25vw;
+    right: 200px;
+}
+
 .aboutList {
     width: 50%;
+}
+
+.listBigo {
+    width: 100%;
 }
 
 ol {
@@ -160,6 +193,11 @@ li span {
 
 .contohImage img {
     width: 32vw;
+}
+
+.codeImage img {
+    width: 40vw;
+    padding: 5px;
 }
 
 /* Banner */
