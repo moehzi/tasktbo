@@ -1,0 +1,92 @@
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+	<title>Moehzi</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<div class="nav">
+			<div class="logo">
+				<h4>Moehzi</h4>
+			</div>
+			<div class="links">
+				<a href="#">Home</a>
+				<a href="index.html" class="">TBO</a>
+				<a href="tugas2.html">Big O</a>
+				<a href="nfa-to-dfa.html">NFA to DFA</a><a href=" regex.html" class="mainlink">Regex</a>
+			</div>
+		</div>
+
+		<div class="landing">
+			<div class="landingText" data-aos="fade-up" data-aos-duration="1000">
+				<h1>Apa itu <br><span style="color: #2f8be0;font-size: 5vw;">Regular Expression?</span></h1>
+				<p>Sebuah teks (string) yang mendefinisikan sebuah pola pencarian sehingga dapat membantu kita untuk
+					melakukan matching (pencocokan), locate (pencarian), dan manipulasi teks.
+				</p>
+			</div>
+			<div class="landingImage" data-aos="fade-down" data-aos-duration="2000">
+				<img src="img/bigomean.svg" alt="">
+			</div>
+		</div>
+		<div class="regex">
+			<h1>Contoh - contoh Penerapan dari Regex</h1>
+			<div class="row-regex">
+				<div class="card-regex">
+					<h3>Regex untuk Valdiasi Data</h3>
+					<p>Pertama-tama, kita harus mendefinisikan pola regex untuk data yang valid. Kemudian, kita lakukan
+						pencocokan dengan pola tersebut.
+						Perhatikan atribut pattern, atribut ini digunakan untuk menyimpan pola regex. Pada contoh di
+						bawah, polanya adalah pengecekan karakter yang diinputkan pada password.
+						Berikut ini contohnya di HTML.Kode HTML:</p>
+					<img src="img/valid.png" alt="">
+					<p></p>
+				</div>
+				<div class="card-regex">
+					<h3>Regex untuk Pencarian</h3>
+					<p>Contoh penerapan regex untuk pencarian sebenarnya hampir sama dengan validasi data.
+
+						Pola regex dimasukan dalam kata kunci, lalu dicocokan dengan database atau teks.
+
+						Contoh program yang menerapkan ini adalah grep.
+
+						Program grep (globally search for a regular expression and print matching lines) biasanya kita
+						temukan di sistem operasi Unix dan Linux, bahkan ini menjadi program yang selalu ada di setiap
+						distro Linux.
+
+						Program grep melakukan pencarian berdasarkan pola regex yang diberikan, lalu mencetak output
+						hasilnya.
+
+						Contoh:
+
+						Misalkan kita ingin mencari teks pada syslog. Kita bisa melihat isi file syslog dengan cat.
+						<br>Contoh: <br>
+						Misalkan kita ingin mencari teks pada syslog. Kita bisa melihat isi file syslog dengan cat.</p>
+					<img src="img/regex.png" alt="">
+					<p></p>
+				</div>
+			</div>
+		</div>
+
+		<div class="footer">
+			<h2>&copy;Moehzi.</h2>
+			<div class="footerLinks">
+				<a href="#" class="mainlink">Task 2</a>
+				<a href="#">Twitter</a>
+				<a href="#">Instagram</a>
+				<a href="#">Facebook</a>
+			</div>
+		</div>
+	</div>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script>
+		AOS.init();
+	</script>
+</body>
+
+</html>
