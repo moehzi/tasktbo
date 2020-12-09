@@ -1,0 +1,344 @@
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+	<title>Moehzi</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<div class="nav">
+			<div class="logo">
+				<h4>Moehzi</h4>
+			</div>
+			<div class="links">
+				<a href="#">Home</a>
+				<a href="index.html" class="">TBO</a>
+				<a href="tugas2.html">Big O</a>
+				<a href="#" class="mainlink">NFA to DFA</a>
+			</div>
+		</div>
+		<div class="landing">
+			<div class="landingText" data-aos="fade-up" data-aos-duration="1000">
+				<h1>Apa itu <br><span style="color: #2f8be0;font-size: 5vw;">Finite Automata?</span></h1>
+				<p>Finite Automata adalah mesin automata dari suatu Bahasa regular. Finite Automata memiliki jumlah
+					state yang banyaknya berhingga dan dapat berpindah-pindah dari suate state ke state yang lainnya.
+					Finite Automata dibagi menjadi Deterministic Finite Automata (DFA) dan Non Deterministic Finite
+					Automata (NFA).
+				</p>
+			</div>
+			<div class="landingImage" data-aos="fade-down" data-aos-duration="2000">
+				<img src="img/bigomean.svg" alt="">
+			</div>
+		</div>
+		<div class="prosedur">
+			<h1>Prosedur Konversi <span style="color: #2f8be0;font-size: 3vw;">NFA to DFA</span> </h1>
+			<div class="row prosedur-row">
+				<div class="card prosedur-card">
+					<h4>01</h4>
+					<p>Buat semua state yang merupakan subset dari state semula. Jumlah state menjadi
+						2Q.
+					</p>
+				</div>
+				<div class="card prosedur-card">
+					<h4>02</h4>
+					<p>Telusuri transisi state-state yang baru terbentuk, dari diagram transisi.
+					</p>
+				</div>
+				<div class="card prosedur-card">
+					<h4>03</h4>
+					<p>Tentukan state awal : {q0}
+					</p>
+				</div>
+			</div>
+			<div class="row prosedur-row">
+				<div class="card prosedur-card">
+					<h4>04</h4>
+					<p> Tentukan state akhir adalah state yang elemennya mengandung state akhir.
+					</p>
+				</div>
+				<div class="card prosedur-card">
+					<h4>05</h4>
+					<p>Reduksi state yang tak tercapai oleh state awal.
+					</p>
+				</div>
+
+			</div>
+
+		</div>
+		<div class="contoh">
+			<h1>Contoh Soal</h1>
+			<p>Diberika diagram NFA sebagai berikut:</p>
+			<img src="img/dd.png" alt="">
+			<p>Sehingga dapat dibuat tabel transisi untuk NFA seperti berikut:</p>
+			<table>
+				<tr>
+					<th></th>
+					<th>0</th>
+					<th>1</th>
+				</tr>
+				<tr>
+					<td>q0</td>
+					<td>q0,q1</td>
+					<td>q0</td>
+				</tr>
+				<tr>
+					<td>q1</td>
+					<td>-</td>
+					<td>q2</td>
+				</tr>
+				<tr>
+					<td>q2</td>
+					<td>-</td>
+					<td>-</td>
+				</tr>
+			</table>
+			<div class="row-step">
+				<div class="step">
+					<p>1. Buat semua state yang merupakan subset dari state semula. jumlah state menjadi 2Q</p>
+					<table>
+						<tr>
+							<th></th>
+							<th>0</th>
+							<th>1</th>
+						</tr>
+						<tr>
+							<td>q0</td>
+							<td>q0,q1</td>
+							<td>q0</td>
+						</tr>
+						<tr>
+							<td>q1</td>
+							<td>-</td>
+							<td>q2</td>
+						</tr>
+						<tr>
+							<td>*q2</td>
+							<td>-</td>
+							<td>-</td>
+						</tr>
+						<tr>
+							<td>q0,q1</td>
+							<td>-</td>
+							<td>-</td>
+						</tr>
+						<tr>
+							<td>q0,q2</td>
+							<td>-</td>
+							<td>-</td>
+						</tr>
+						<tr>
+							<td>q1,q2</td>
+							<td>-</td>
+							<td>-</td>
+						</tr>
+						<tr>
+							<td>q0,q1,q2</td>
+							<td>-</td>
+							<td>-</td>
+						</tr>
+					</table>
+				</div>
+				<div class="step">
+					<p>2. Telusuri transisi state–state yang baru terbentuk, dari diagram transisi.</p>
+					<table>
+						<tr>
+							<th></th>
+							<th>0</th>
+							<th>1</th>
+						</tr>
+						<tr>
+							<td>q0</td>
+							<td>q0,q1</td>
+							<td>q0</td>
+						</tr>
+						<tr>
+							<td>q1</td>
+							<td>-</td>
+							<td>q2</td>
+						</tr>
+						<tr>
+							<td>*q2</td>
+							<td>-</td>
+							<td>-</td>
+						</tr>
+						<tr>
+							<td>q0,q1</td>
+							<td>q0,q1</td>
+							<td>q0,q2</td>
+						</tr>
+						<tr>
+							<td>q0,q2</td>
+							<td>q0,q1</td>
+							<td>q0</td>
+						</tr>
+						<tr>
+							<td>q1,q2</td>
+							<td>-</td>
+							<td>q2</td>
+						</tr>
+						<tr>
+							<td>q0,q1,q2</td>
+							<td>q0,q1</td>
+							<td>q0,q2</td>
+						</tr>
+					</table>
+				</div>
+				<div class="step">
+					<p>3. Tentukan state awal : q0.</p>
+					<table>
+						<tr>
+							<th></th>
+							<th>0</th>
+							<th>1</th>
+						</tr>
+						<tr>
+							<td>->q0</td>
+							<td>q0,q1</td>
+							<td>q0</td>
+						</tr>
+						<tr>
+							<td>q1</td>
+							<td>-</td>
+							<td>q2</td>
+						</tr>
+						<tr>
+							<td>*q2</td>
+							<td>-</td>
+							<td>-</td>
+						</tr>
+						<tr>
+							<td>q0,q1</td>
+							<td>q0,q1</td>
+							<td>q0,q2</td>
+						</tr>
+						<tr>
+							<td>q0,q2</td>
+							<td>q0,q1</td>
+							<td>q0</td>
+						</tr>
+						<tr>
+							<td>q1,q2</td>
+							<td>-</td>
+							<td>q2</td>
+						</tr>
+						<tr>
+							<td>q0,q1,q2</td>
+							<td>q0,q1</td>
+							<td>q0,q2</td>
+						</tr>
+					</table>
+				</div>
+				<div class="step">
+					<p>4. Tentukan state akhir adalah state yang elemennya mengandung state akhir.</p>
+					<table>
+						<tr>
+							<th></th>
+							<th>0</th>
+							<th>1</th>
+						</tr>
+						<tr>
+							<td>->q0</td>
+							<td>q0,q1</td>
+							<td>q0</td>
+						</tr>
+						<tr>
+							<td>q1</td>
+							<td>-</td>
+							<td>q2</td>
+						</tr>
+						<tr>
+							<td>*q2</td>
+							<td>-</td>
+							<td>-</td>
+						</tr>
+						<tr>
+							<td>q0,q1</td>
+							<td>q0,q1</td>
+							<td>q0,q2</td>
+						</tr>
+						<tr>
+							<td>*q0,q2</td>
+							<td>q0,q1</td>
+							<td>q0</td>
+						</tr>
+						<tr>
+							<td>*q1,q2</td>
+							<td>-</td>
+							<td>q2</td>
+						</tr>
+						<tr>
+							<td>*q0,q1,q2</td>
+							<td>q0,q1</td>
+							<td>q0,q2</td>
+						</tr>
+					</table>
+				</div>
+				<div class="step">
+					<p>5. Reduksi state yang tak tercapai oleh state awal.</p>
+					<table>
+						<tr>
+							<th></th>
+							<th>0</th>
+							<th>1</th>
+						</tr>
+						<tr>
+							<td>->q0</td>
+							<td>q0,q1</td>
+							<td>q0</td>
+						</tr>
+						<tr>
+							<td>q0,q1</td>
+							<td>q0,1</td>
+							<td>q0,q2</td>
+						</tr>
+						<tr>
+							<td>*q0,q2</td>
+							<td>q0,q1</td>
+							<td>q0</td>
+						</tr>
+
+					</table>
+				</div>
+			</div>
+			<p>Dari hasil tersebut maka akan diperoleh hasil sebagai berikut :</p>
+			<img src="img/daw.svg" alt="">
+		</div>
+	</div>
+
+
+	<!-- Footer -->
+	<div class="banner">
+		<div class="bannerText">
+			<h1>About Me. <br><span style="font-size: 1.6vw; font-weight: strong;" class="bannerInnerText">
+					Muhammad Nur Faisi S</span> <br><span style="font-size: 1.6vw; font-weight: normal;"
+					class="bannerInnerText">D121181503 | Teknik Informatika Unhas</span></h1>
+			<a href="https://www.instagram.com/muhnurfaizi/"><img src="img/instagram.svg" alt=""></a>
+			<a href="https://www.facebook.com/faizi1234098/"><img src="img/facebook.svg" alt=""></a>
+		</div>
+		<div class="bannerImg">
+			<img src="img/realme.svg" alt="">
+		</div>
+	</div>
+
+	<div class="footer">
+		<h2>&copy;Moehzi.</h2>
+		<div class="footerLinks">
+			<a href="#" class="mainlink">Task 2</a>
+			<a href="#">Twitter</a>
+			<a href="#">Instagram</a>
+			<a href="#">Facebook</a>
+		</div>
+	</div>
+	</div>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script>
+		AOS.init();
+	</script>
+</body>
+
+</html>

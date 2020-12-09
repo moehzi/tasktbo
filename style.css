@@ -1,246 +1,322 @@
 html,
 body {
-    background-color: #eeeeee;
-    font-family: 'Source Sans Pro', sans-serif;
-    overflow-x: hidden;
-    margin: 0px;
-    padding: 0px;
+	background-color: #eeeeee;
+	font-family: 'Source Sans Pro', sans-serif;
+	overflow-x: hidden;
+	margin: 0px;
+	padding: 0px;
 }
 
 * {
-    text-decoration: none;
+	text-decoration: none;
 }
 
 .nav {
-    position: fixed;
-    z-index: 1000;
-    top: 0;
-    right: 0;
-    left: 0;
-    height: 80px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 25px 0 25px;
-    background-color: #fff;
-    box-shadow: 0 19px 38px rgba(0, 0, 0, 0);
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+	position: fixed;
+	z-index: 1000;
+	top: 0;
+	right: 0;
+	left: 0;
+	height: 80px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 25px 0 25px;
+	background-color: #fff;
+	box-shadow: 0 19px 38px rgba(0, 0, 0, 0);
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
 
 }
 
 .nav .links a {
-    margin-right: 25px;
-    font-size: 16px;
-    font-weight: 600;
-    color: black;
+	margin-right: 25px;
+	font-size: 16px;
+	font-weight: 600;
+	color: black;
 }
 
 .nav .links .mainlink {
-    color: #e0501b;
+	color: #e0501b;
 }
 
 .nav h4 {
-    font-size: 22px;
-    font-weight: bold;
-    margin-left: 25px;
+	font-size: 22px;
+	font-weight: bold;
+	margin-left: 25px;
 }
 
 /* Landing CSS */
 .landing {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 10vw 0 10vw;
-    height: 100vh;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 10vw 0 10vw;
+	height: 100vh;
 }
 
+.landing p {}
+
 .bigo1 {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 10vw 0 10vw;
-    height: 120vh;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 10vw 0 10vw;
+	height: 120vh;
 }
 
 .landingText h1 {
-    font-size: 6vw;
-    margin: 0;
+	font-size: 6vw;
+	margin: 0;
 }
 
 .landingText h3 {
-    margin: 6px;
-    font-size: 20px;
-    opacity: 0.4;
-    line-height: 30px;
+	margin: 6px;
+	font-size: 20px;
+	opacity: 0.4;
+	line-height: 30px;
+}
+
+.landingText p {
+	font-size: 18px;
+	line-height: 175%;
+	font-size: 20px;
+	opacity: 0.4;
 }
 
 .landingText .btn {
-    width: 120px;
-    margin-top: 30px;
-    padding: 14px 20px 14px 20px;
-    background-color: #2f8be0;
-    border-radius: 45px;
-    text-align: center;
+	width: 120px;
+	margin-top: 30px;
+	padding: 14px 20px 14px 20px;
+	background-color: #2f8be0;
+	border-radius: 45px;
+	text-align: center;
 }
 
 .landingText .btn a {
-    font-size: 1.2vw;
-    color: #fff;
+	font-size: 1.2vw;
+	color: #fff;
 }
 
 .landingImage img {
-    width: 30vw;
+	width: 30vw;
 }
 
 .about {
-    height: 600px;
-    padding: 50px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
+	height: 600px;
+	padding: 50px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-items: center;
 }
 
 .aboutText {
-    position: relative;
-    padding: 0 50px;
-    height: inherit;
+	position: relative;
+	padding: 0 50px;
+	height: inherit;
 }
 
 .aboutText h1 {
-    font-size: 34px;
-    position: relative;
-    left: 200px;
+	font-size: 34px;
+	position: relative;
+	left: 200px;
 }
 
 .aboutText img {
-    width: 13vw;
-    position: absolute;
-    top: 50px;
+	width: 13vw;
+	position: absolute;
+	top: 50px;
 }
 
 .bigoText {
-    position: relative;
-    padding: 0 50px;
-    height: inherit;
+	position: relative;
+	padding: 0 50px;
+	height: inherit;
 }
 
 .bigoText h1 {
-    font-size: 34px;
-    position: relative;
-    left: 200px;
+	font-size: 34px;
+	position: relative;
+	left: 200px;
 }
 
 .bigoText img {
-    width: 13vw;
-    position: absolute;
-    top: 50px;
-    width: 25vw;
-    right: 200px;
+	width: 13vw;
+	position: absolute;
+	top: 50px;
+	width: 25vw;
+	right: 200px;
 }
 
 .aboutList {
-    width: 50%;
+	width: 50%;
 }
 
 .listBigo {
-    width: 100%;
+	width: 100%;
 }
 
 ol {
-    list-style-type: none;
-    color: #e0501b;
+	list-style-type: none;
+	color: #e0501b;
 }
 
 ol li {
-    font-size: 44px;
-    position: relative;
-    margin-bottom: 20px;
-    border-bottom: 1px solid #ebebeb;
+	font-size: 44px;
+	position: relative;
+	margin-bottom: 20px;
+	border-bottom: 1px solid #ebebeb;
 }
 
 li p {
-    font-size: 25px;
-    color: #000;
-    padding-left: 60px;
-    line-height: 30px;
-    opacity: 0.6;
+	font-size: 25px;
+	color: #000;
+	padding-left: 60px;
+	line-height: 30px;
+	opacity: 0.6;
 }
 
 li span {
-    position: absolute;
-    line-height: 25px;
-    font-weight: 600;
+	position: absolute;
+	line-height: 25px;
+	font-weight: 600;
 }
 
 
 
 .contohText h1 {
-    font-size: 4vw;
-    margin: 0;
+	font-size: 4vw;
+	margin: 0;
 }
 
 .contohText h4 {
-    margin: 6px;
-    font-size: 20px;
-    opacity: 0.4;
-    line-height: 30px;
+	margin: 6px;
+	font-size: 20px;
+	opacity: 0.4;
+	line-height: 30px;
 }
 
 .contohImage img {
-    width: 32vw;
+	width: 32vw;
 }
 
 .codeImage img {
-    width: 40vw;
-    padding: 5px;
+	width: 40vw;
+	padding: 5px;
 }
 
 /* Banner */
 .banner {
-    height: 250px;
-    background-color: #ffce63;
-    display: flex;
-    flex-direction: row;
-    padding: 50px;
-    justify-content: space-evenly;
-    align-items: center;
+	height: 250px;
+	background-color: #ffce63;
+	display: flex;
+	flex-direction: row;
+	padding: 50px;
+	justify-content: space-evenly;
+	align-items: center;
 }
 
 .bannerText h1 {
-    font-size: 3vw;
-    color: #000;
-    font-weight: 600;
+	font-size: 3vw;
+	color: #000;
+	font-weight: 600;
 }
 
 .bannerText img {
-    width: 4vw;
-    margin-right: 20px;
+	width: 4vw;
+	margin-right: 20px;
 }
 
 .bannerImg img {
-    width: 14vw;
+	width: 14vw;
 }
 
 .footer {
-    height: 100px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-bottom: 20px;
+	height: 100px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-bottom: 20px;
 }
 
 .footerLinks a {
-    margin: 20px;
-    font-size: 16px;
-    font-weight: 600;
-    color: #000;
+	margin: 20px;
+	font-size: 16px;
+	font-weight: 600;
+	color: #000;
 }
 
 .footerLinks .mainlink {
-    color: #e0501b;
+	color: #e0501b;
+}
+
+.prosedur h1 {
+	font-size: 48px;
+	text-align: center;
+}
+
+.row.prosedur-row {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.card.prosedur-card {
+	margin: 2rem;
+	display: flex;
+	flex-direction: column;
+	width: 15%;
+	padding: 0 1rem;
+	border-radius: 10px;
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+	font-size: 18px;
+	opacity: 0.5;
+	justify-content: space space-evenly;
+}
+
+.card.prosedur-card h4 {
+	font-size: 32px;
+	color: #2f8be0;
+}
+
+.contoh {
+	text-align: center;
+	margin: 144px 0;
+}
+
+.contoh h1 {
+	font-size: 48px;
+}
+
+.contoh table {
+	margin: auto;
+	border: 1px solid black;
+}
+
+table,
+td,
+th {
+	border: 2px solid black;
+	padding: 1rem;
+	border-collapse: collapse;
+}
+
+.row-step {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 24px;
+	padding: 2rem;
+}
+
+.step {
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+	padding: 1rem;
+	border-radius: 50px;
+	width: 25%;
+	text-align: left;
 }
