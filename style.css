@@ -358,3 +358,35 @@ th {
 	text-align: center;
 	border-radius: 50px;
 }
+
+.contohCFG h1 {
+	font-size: 48px;
+	text-align: center;
+}
+
+.cfg-container {
+	display: flex;
+	align-items: center;
+	width: 75%;
+	margin: auto;
+}
+
+.cfg-text {
+	margin-left: 2rem;
+}
+
+.cfg-text h4 {
+	font-size: 32px;
+}
+
+.cfg-text p {
+	opacity: 0.4;
+	line-height: 150%;
+	font-size: 20px;
+}
+
+.cfg-text ul li {
+	opacity: 0.4;
+	line-height: 150%;
+	font-size: 20px;
+}

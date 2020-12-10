@@ -1,0 +1,114 @@
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+	<title>Moehzi</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<div class="nav">
+			<div class="logo">
+				<h4>Moehzi</h4>
+			</div>
+			<div class="links">
+				<a href="#">Home</a>
+				<a href="index.html">TBO</a>
+				<a href=" tugas2.html">Big O</a>
+				<a href="nfa-to-dfa.html" ">NFA to DFA</a>
+				<a href=" regex.html" ">Regex</a>
+				<a href=" cfg.html" class="mainlink">CFG</a>
+			</div>
+		</div>
+
+		<!-- ?Landing Page  -->
+		<div class="landing">
+			<div class="landingText" data-aos="fade-up" data-aos-duration="1000">
+				<h1>Apa itu <br><span style="color: #2f8be0;font-size: 4vw;">Context Free Grammar?</span></h1>
+				<p style="width: 80%;">Tata bahasa formal di mana setiap aturan produksi adalah dalam bentuk A → B di
+					mana A adalah
+					pemproduksi, dan B adalah hasil produksi. Batasannya hanyalah ruas kiri adalah sebuah simbol
+					variabel
+				</p>
+			</div>
+			<div class="landingImage" data-aos="fade-down" data-aos-duration="2000">
+				<img src="img/bigomean.svg" alt="">
+			</div>
+		</div>
+		<div class="contohCFG">
+			<h1>Contoh Pengaplikasian Context Free Grammar</h1>
+			<div class="cfg-container">
+				<img src="img/parsing.jpg" alt="" style="width:120vw;">
+				<div class="cfg-text">
+					<h4>Parsing</h4>
+					<p>Context Free Grammar ( CFG ) menjadi dasar dalam pembentukan suatu parser/proses analisis
+						sintaksis.
+						Bagian sintaks dalam suatu kompilator kebanyakan di definisikan dalam tata bahasa bebas konteks.
+						Pohon penurunan ( derivation tree/parse tree) berguna untuk menggambarkan simbol-simbol variabel
+						menjadi simbol-simbol terminal setiap simbol variabel akan di turunkan menjadi terminal sampai
+						tidak
+						ada yang belum tergantikan.</p>
+					<p>Contoh, terdapat CFG dengan aturan produksi sebagai berikut dengan simbol awal S :</p>
+					<ul>
+						<li>S → AB</li>
+						<li>A → aA | a</li>
+						<li>B → bB | b</li>
+					</ul>
+					<p>Maka jika ingin dicari gambar pohon penurunan dengan string : ‘aabbb’ hasilnya adalah seperti di
+						samping.</p>
+				</div>
+			</div>
+			<div class="cfg-text" style="margin: auto; width: 75%;">
+				<h4>Ambiguitas</h4>
+				<p>Ambiguitas terjadi bila terdapat lebih dari satu pohon penurunan yang berbeda untuk memperoleh
+					suatu string.</p>
+				<p>Misalkan terdapat tata bahasa sebagai berikut :</p>
+				<ul>
+					<li>S → A | B</li>
+					<li>A → a</li>
+					<li>B → a</li>
+				</ul>
+				<p>Untuk memperoleh untai ‘a’ bisa terdapat dua cara penurunan sebagai berikut :</p>
+				<ul>
+					<li> S => A => a</li>
+					<li>S => B => a</li>
+				</ul>
+			</div>
+
+
+		</div>
+		<!-- Footer -->
+		<div class="banner">
+			<div class="bannerText">
+				<h1>About Me. <br><span style="font-size: 1.6vw; font-weight: strong;" class="bannerInnerText">
+						Muhammad Nur Faisi S</span> <br><span style="font-size: 1.6vw; font-weight: normal;"
+						class="bannerInnerText">D121181503 | Teknik Informatika Unhas</span></h1>
+				<a href="https://www.instagram.com/muhnurfaizi/"><img src="img/instagram.svg" alt=""></a>
+				<a href="https://www.facebook.com/faizi1234098/"><img src="img/facebook.svg" alt=""></a>
+			</div>
+			<div class="bannerImg">
+				<img src="img/realme.svg" alt="">
+			</div>
+		</div>
+
+		<div class="footer">
+			<h2>&copy;Moehzi.</h2>
+			<div class="footerLinks">
+				<a href="#" class="mainlink">Task 1</a>
+				<a href="#">Twitter</a>
+				<a href="#">Instagram</a>
+				<a href="#">Facebook</a>
+			</div>
+		</div>
+	</div>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script>
+		AOS.init();
+	</script>
+</body>
+
+</html>
