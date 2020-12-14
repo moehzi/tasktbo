@@ -1,0 +1,125 @@
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+	<title>Moehzi</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<div class="nav">
+			<div class="logo">
+				<h4>Moehzi</h4>
+			</div>
+			<div class="links">
+				<a href="#">Home</a>
+				<a href="index.html">TBO</a>
+				<a href=" tugas2.html">Big O</a>
+				<a href="nfa-to-dfa.html" ">NFA to DFA</a>
+				<a href=" regex.html" ">Regex</a>
+				<a href=" cfg.html">CFG</a>
+				<a href="chomsky.html" class="mainlink">Hirarki Chomsky</a>
+			</div>
+		</div>
+
+		<!-- ?Landing Page  -->
+		<div class="landing">
+			<div class="landingText" data-aos="fade-up" data-aos-duration="1000">
+				<h1>Apa itu <br><span style="color: #2f8be0;font-size: 4vw;">Hierarky Chomsky?</span></h1>
+				<p style="width: 80%;">Tata bahasa (grammar) bisa didefinisikan secara formal sebagai kumpulan dari
+					himpunan-himpunan variabel, simbol-simbol terminal, simbol awal, yang dibatasi oleh aturan-aturan
+					produksi.
+
+				</p>
+			</div>
+			<div class="landingImage" data-aos="fade-down" data-aos-duration="2000">
+				<img src="img/bigomean.svg" alt="">
+			</div>
+		</div>
+		<div class="prosedur">
+			<h1>Klasifikasi Menurut <span style="color: #2f8be0;font-size: 3vw;">Hirarki Chomsky</span> </h1>
+			<div class="row prosedur-row">
+				<div class="card prosedur-card">
+					<h4>Level 0 - Natural Language</h4>
+					<p>Bahasa manusia termasuk kedalam tipe ini, dimana tidak ada batasan untuk aturan produksinya.
+					</p>
+					<p>Contoh :</p>
+					<ul>
+						<li>Abc &rarr; aa</li>
+						<li>Bc &rarr; aBaB</li>
+						<li>CaB &rarr; aaBaaBa</li>
+					</ul>
+				</div>
+				<div class="card prosedur-card">
+					<h4>Level 1 - Context Sensitive</h4>
+					<p>Panjang string di ruas kiri (&alpha;) &le; panjang string ruas kanan (&beta;).
+					</p>
+					<p>Contoh :</p>
+					<ul>
+						<li>Ab &rarr; aBa</li>
+						<li>cD &rarr; aB</li>
+						<li>dEd &rarr; FabCa</li>
+					</ul>
+				</div>
+				<div class="card prosedur-card">
+					<h4>Level 2 - Context Free</h4>
+					<p>α adalah sebuah simbol variabel, dan batasannya bertambah bahwa ruas kiri harus tetap satu simbol
+						variabel.
+					</p>
+					<p>Contoh :</p>
+					<ul>
+						<li>A &rarr; aa</li>
+						<li>B &rarr; aBD</li>
+						<li>C &rarr; FGaa</li>
+					</ul>
+				</div>
+				<div class="card prosedur-card">
+					<h4>Level 3 - Regular</h4>
+					<p>Batasannya bertambah lagi, dimana ruas kanan maksimal memiliki sebuah simbol variabel yang
+						terletak paling kanan. Artinya bisa memiliki simbol terminal dengan jumlah tidak dibatasi,
+						tetapi bila terdapat simbol variabel maka simbol variabel tersebut hanya berjumlah satu (1) dan
+						terletak paling kanan.
+					</p>
+					<p>Contoh :</p>
+					<ul>
+						<li>A &rarr; aa</li>
+						<li>B &rarr; aaB</li>
+						<li>C &rarr; aaaaa</li>
+					</ul>
+				</div>
+			</div>
+			<!-- Footer -->
+			<div class="banner" style="margin-top: 144px;">
+				<div class="bannerText">
+					<h1>About Me. <br><span style="font-size: 1.6vw; font-weight: strong;" class="bannerInnerText">
+							Muhammad Nur Faisi S</span> <br><span style="font-size: 1.6vw; font-weight: normal;"
+							class="bannerInnerText">D121181503 | Teknik Informatika Unhas</span></h1>
+					<a href="https://www.instagram.com/muhnurfaizi/"><img src="img/instagram.svg" alt=""></a>
+					<a href="https://www.facebook.com/faizi1234098/"><img src="img/facebook.svg" alt=""></a>
+				</div>
+				<div class="bannerImg">
+					<img src="img/realme.svg" alt="">
+				</div>
+			</div>
+
+			<div class="footer">
+				<h2>&copy;Moehzi.</h2>
+				<div class="footerLinks">
+					<a href="#" class="mainlink">Task 1</a>
+					<a href="#">Twitter</a>
+					<a href="#">Instagram</a>
+					<a href="#">Facebook</a>
+				</div>
+			</div>
+		</div>
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<script>
+			AOS.init();
+		</script>
+</body>
+
+</html>
