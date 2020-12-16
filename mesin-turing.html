@@ -1,0 +1,159 @@
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+	<title>Moehzi</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<div class="nav">
+			<div class="logo">
+				<h4>Moehzi</h4>
+			</div>
+			<div class="links">
+				<a href="#">Home</a>
+				<a href="index.html">TBO</a>
+				<a href=" tugas2.html">Big O</a>
+				<a href="nfa-to-dfa.html" ">NFA to DFA</a>
+				<a href=" regex.html" ">Regex</a>
+				<a href=" cfg.html">CFG</a>
+				<a href="chomsky.html">Hirarki Chomsky</a>
+				<a href="#" class="mainlink">Turing Machine</a>
+			</div>
+		</div>
+
+		<!-- ?Landing Page  -->
+		<div class="landing">
+			<div class="landingText" data-aos="fade-up" data-aos-duration="1000">
+				<h1>Apa itu <br><span style="color: #2f8be0;font-size: 4vw;">Mesin Turing?</span></h1>
+				<p style="width: 80%;">Mesin Turing adalah sebuah komputasi model matematika yang menetapkan mesin
+					abstrak, yang memanipulasi simbol pada sebuah garis tape berdasarkan pada tabel aturan.
+
+				</p>
+			</div>
+			<div class="landingImage" data-aos="fade-down" data-aos-duration="2000">
+				<img src="img/bigomean.svg" alt="">
+			</div>
+		</div>
+		<div class="prosedur">
+			<h1>Bagaimana Prinsip Kerja <span style="color: #2f8be0;font-size: 3vw;">Mesin Turing?</span> </h1>
+			<div class="row prosedur-row">
+				<div class="card prosedur-card">
+					<h4>01</h4>
+					<p>Lihat state semula dan simbol yang ditunjuk head
+					</p>
+				</div>
+				<div class="card prosedur-card">
+					<h4>02</h4>
+					<p>Berdasarkan fungsinya tentukan :
+						<ul>
+							<li>Tentukan state berikutnya</li>
+							<li>Lakukan penulisan ke tape</li>
+							<li>Gerakkan head ke kanan dan ke kiri</li>
+						</ul>
+					</p>
+				</div>
+				<div class="card prosedur-card">
+					<h4>03</h4>
+					<p>Jika pasangan state dan simbol yang ditunjuk head tidak ada lagi fungsi transisinya, maka mesin
+						turing berhenti
+					</p>
+				</div>
+				<div class="card prosedur-card">
+					<h4>04</h4>
+					<p>Jika mesin turing berhenti di state final berarti input diterima. Begitupun sebaliknya, jika
+						berhenti di bukan final state maka input ditolak.
+					</p>
+				</div>
+			</div>
+
+		</div>
+		<div class="prosedur turing">
+			<h1>Contoh Soal<span style="color: #2f8be0;font-size: 3vw;"> Mesin Turing</span> </h1>
+			<p style="text-align: center; font-size: 24px;">Tentukan status string input abbaa pada mesin Turing, apakah
+				diterima atau ditolak?</p>
+			<div class="row prosedur-row">
+				<div class="card prosedur-card">
+					<h4>01</h4>
+					<p>Pita string input yang akan dibaca : <strong>abbaa</strong>
+					</p>
+					<img src="img/1.png" alt="">
+					<p>Fungsi transisi δ(q1, a) = (q1, a, R) menyebabkan head bergerak ke <strong>kanan</strong>.</p>
+				</div>
+				<div class="card prosedur-card">
+					<h4>02</h4>
+					<img src="img/2.png" alt="">
+					<p>fungsi transisi δ(q1, b) = (q1, a, R) menyebabkan head menulisalalu bergerak kekanan.
+					</p>
+				</div>
+				<div class="card prosedur-card">
+					<h4>03</h4>
+					<img src="img/3.png" alt="">
+					<p>fungsi transisi δ(q1, b) = (q1, a, R) menyebabkan head menulis a lalu bergerak ke kanan</p>
+				</div>
+				<div class="card prosedur-card">
+					<h4>04</h4>
+					<img src="img/4.png" alt="">
+					<p>fungsi transisi δ(q1, a) = (q1, a, R) menyebabkan head bergerak ke kanan.
+					</p>
+				</div>
+			</div>
+			<div class="row prosedur-row">
+				<div class="card prosedur-card">
+					<h4>05</h4>
+					<img src="img/5.png" alt="">
+					<p>fungsi transisi δ(q1, a) = (q1, a, R) menyebabkan head bergerak ke kanan</p>
+				</div>
+				<div class="card prosedur-card">
+					<h4>06</h4>
+					<img src="img/5.png" alt="">
+					<p>Head menunjuk B, karena bagian pita yang belum ditulisi dianggap berisiB.Fungsi transisi δ(q1,B)
+						=
+						(q2,B, L), menyatakan head bergerak ke kiri</p>
+				</div>
+				<div class="card prosedur-card">
+					<h4>07</h4>
+					<img src="img/5.png" alt="">
+					<p>tidak ada transisi lagi dari state q2, mesin Turing akan berhenti.Karena state q2 termasuk state
+						akhir (final state), berarti input abbaa diterima.</p>
+				</div>
+
+			</div>
+
+		</div>
+		<!-- Footer -->
+		<div class="banner" style="margin-top: 144px;">
+			<div class="bannerText">
+				<h1>About Me. <br><span style="font-size: 1.6vw; font-weight: strong;" class="bannerInnerText">
+						Muhammad Nur Faisi S</span> <br><span style="font-size: 1.6vw; font-weight: normal;"
+						class="bannerInnerText">D121181503 | Teknik Informatika Unhas</span></h1>
+				<a href="https://www.instagram.com/muhnurfaizi/"><img src="img/instagram.svg" alt=""></a>
+				<a href="https://www.facebook.com/faizi1234098/"><img src="img/facebook.svg" alt=""></a>
+			</div>
+			<div class="bannerImg">
+				<img src="img/realme.svg" alt="">
+			</div>
+		</div>
+
+		<div class="footer">
+			<h2>&copy;Moehzi.</h2>
+			<div class="footerLinks">
+				<a href="#" class="mainlink">Task 1</a>
+				<a href="#">Twitter</a>
+				<a href="#">Instagram</a>
+				<a href="#">Facebook</a>
+			</div>
+		</div>
+	</div>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script>
+		AOS.init();
+	</script>
+</body>
+
+</html>
